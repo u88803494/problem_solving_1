@@ -40,8 +40,8 @@ const { currentPage, totalPage, renderPages } = getPagination(offset, limit, tot
 
 - getPagination(15, 5, 33) // { currentPage: 4, totalPage: 7, renderPages: [2,3,4,5,6] }
 
-- getPagination(20, 5, 33) // { currentPage: 5, totalPage: 7, renderPages: [2,3,5,6,7] }
+- getPagination(20, 5, 33) // { currentPage: 5, totalPage: 7, renderPages: [3,4,5,6,7] }
 
-- getPagination(25, 5, 33) // { currentPage: 6, totalPage: 7, renderPages: [2,3,5,6,7] }
+- getPagination(25, 5, 33) // { currentPage: 6, totalPage: 7, renderPages: [3,4,5,6,7] }
 
-- getPagination(30, 5, 33) // { currentPage: 7, totalPage: 7, renderPages: [2,3,5,6,7] }
+- getPagination(30, 5, 33) // { currentPage: 7, totalPage: 7, renderPages: [3,4,5,6,7] }
