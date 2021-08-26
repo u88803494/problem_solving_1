@@ -1,8 +1,18 @@
 const getPagination = (offset, limit, total) => {
   const totalPage = Math.ceil(total / limit);
+  let currentPage;
+  if (offset >= 0 && offset < total) {
+    currentPage = Math.ceil((offset + 1) / limit);
+  }
+  if (offset < 0) {
+    currentPage = 1;
+  }
+  if (offset >= total) {
+    currentPage = totalPage;
+  }
 
   return ({
-    currentPage: 1,
+    currentPage,
     totalPage,
     renderPages: [],
   })
