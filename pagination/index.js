@@ -32,8 +32,6 @@ const getPagination = (offset, limit, total) => {
   })
 }
 
-// const { currentPage, totalPage, renderPages } = getPagination(offset, limit, total)
-
 console.log(getPagination(0, 5, 33));
 // { currentPage: 1, totalPage: 7, renderPages: [1,2,3,4,5] }
 
