@@ -21,6 +21,20 @@ debounce 是在 delay 時間內如果重新觸發會取消前一次並保留當�
 建立函式 debounce
 const debounceFunc = debounce(func, delay)
 
+###  使用 Linked List 實作 Stack
+實作需包含以下方法。
+push() : 添加新元素。
+pop()：移除元素並返回被移除的元素。
+size()：返回所有元素數量。
+const myStack = new Stack()
+
+#### example
+myStack.push(1)
+myStack.push(2)
+myStack.push(3)
+myStack.pop() // 3
+myStack.size() // 2
+
 ### 實作 getPagination
 
 參考右圖範例實作可以取得分頁資訊的 function，根據輸入的
